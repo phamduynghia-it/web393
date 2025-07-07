@@ -21,6 +21,27 @@
             <source src="/static/music/background.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
         </audio>
+        <!-- Nút bật/tắt nhạc cho mobile -->
+        <button
+            id="toggle-music-btn"
+            style="
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999;
+                display: none;
+                background: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                border: none;
+                border-radius: 50%;
+                width: 56px;
+                height: 56px;
+                font-size: 24px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            "
+        >
+            <span id="music-icon">&#x1F50A;</span>
+        </button>
         <div
             id="app"
             data-page='{
