@@ -1,0 +1,99 @@
+<!-- Clone by @WusThanhDieu -->
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>love you</title>
+        <link
+            href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/static/css/app.css" />
+    </head>
+    <body class="font-sans antialiased">
+        <audio
+            id="background-music"
+            preload="auto"
+            playsinline
+            webkit-playsinline
+        >
+            <source src="/static/music/background.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <div
+            id="app"
+            data-page='{
+        "component": "views/home",
+        "props": {
+          "errors": {},
+          "name": "Github NguyenQuocViet",
+          "quote": {
+            "message": "",
+            "author": ""
+          },
+          "auth": {
+            "user": null
+          },
+          "ziggy": {
+            "port": null,
+            "defaults": [],
+            "routes": {
+              "home": {
+                "uri": "/",
+                "methods": ["GET", "HEAD"]
+              },
+              "show-create-form": {
+                "uri": "create-message/{id?}",
+                "methods": ["GET", "HEAD"],
+                "parameters": ["id"]
+              },
+              "create-form": {
+                "uri": "create-message",
+                "methods": ["POST"]
+              },
+              "login": {
+                "uri": "login",
+                "methods": ["GET", "HEAD"]
+              },
+              "logout": {
+                "uri": "logout",
+                "methods": ["POST"]
+              },
+              "storage.local": {
+                "uri": "storage/{path}",
+                "methods": ["GET", "HEAD"],
+                "wheres": {
+                  "path": ".*"
+                },
+                "parameters": ["path"]
+              }
+            },
+            "location": ""
+          },
+          "message": "",
+          "client": {
+            "fontName": "Mali",
+            "color": "#ff0019",
+            "messages": [
+          " Happy birthday aiu🎂",
+"Chúc anh luôn bình an",
+"Chúc aiu mãi thành công",
+"Chúc mừng sinh nhật cục dàng❤️"
+            ],
+            "music": "//https://files.catbox.moe/d06oeq.mp3"
+          },
+          "clientId": "/"
+        },
+        "url": "/",
+        "version": "",
+        "clearHistory": false,
+        "encryptHistory": false
+      }
+      '
+        ></div>
+        <script type="module" src="/static/js/app.js"></script>
+        <script type="module" src="/static/js/home.js"></script>
+        <script type="module" src="/static/js/audio.js"></script>
+    </body>
+</html>
