@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener(
         "touchstart",
         function (e) {
-            e.preventDefault();
+            // e.preventDefault(); // Loại bỏ để không chặn thao tác với nút
             startMusic();
         },
         { once: true }
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener(
         "click",
         function (e) {
-            e.preventDefault();
+            // e.preventDefault(); // Loại bỏ để không chặn thao tác với nút
             startMusic();
         },
         { once: true }
